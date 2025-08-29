@@ -1,6 +1,6 @@
 # Retrieving Users and Groups in Linux
 
-### List Users
+## List Users
 
 To retrieve the list of users, you can inspect the `/etc/passwd` file. Use the following command to access the file:
 
@@ -10,7 +10,7 @@ cat /etc/passwd
 
 Example output:
 
-```
+```bash
 root:x:0:0:root:/root:/bin/bash
 nobody:x:65534:65534:nobody:/nonexistent:/usr/sbin/nologin
 user1:x:1000:1000:User One,,,:/home/user1:/bin/bash
@@ -31,7 +31,7 @@ For example:
 - The line `root:x:0:0:root:/root:/bin/bash` indicates that there is a user named `root` with a UID of `0`, a GID of `0`, and the default shell is `/bin/bash`.
 - The line `user1:x:1000:1000:User One,,,:/home/user1:/bin/bash` shows that there is a user named `user1` with a UID of `1000`, a GID of `1000`, and the default shell is `/bin/bash`. The comment field provides additional information, such as "User One".
 
-### List Groups
+## List Groups
 
 To view the groups available on the system, you can check the `/etc/group` file. Use the following command to access this file:
 
@@ -41,7 +41,7 @@ cat /etc/group
 
 Example output:
 
-```
+```bash
 root:x:0:
 daemon:x:1:
 bin:x:2:
@@ -78,7 +78,7 @@ For example:
 
 This information is useful for managing group membership and permissions in any Linux environment.
 
-### Check Current User
+## Check Current User
 
 If you are logged into the system and want to know the details of the currently logged-in user, you can use the `id` command to get the user's UID, GID, and associated groups:
 
@@ -88,7 +88,7 @@ id
 
 This will output something like:
 
-```
+```bash
 uid=1000(username) gid=1000(group) groups=1000(group),27(sudo)
 ```
 
