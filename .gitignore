@@ -1,7 +1,6 @@
-.idea
-.DS_Store
-
 # IDE/editor
 .vscode/
+.idea/
 
 # OS files
+.DS_Store
