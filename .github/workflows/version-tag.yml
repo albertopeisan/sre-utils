@@ -1,0 +1,14 @@
+name: Auto semver tagging
+run-name: Create semver tag
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  tag:
+    permissions:
+      contents: write
+      pull-requests: read
+    uses: albertopeisan/shared-workflows/.github/workflows/auto-version-tag.yml@main
