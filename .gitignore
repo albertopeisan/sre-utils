@@ -4,3 +4,11 @@
 
 # OS files
 .DS_Store
+
+# Tool and build caches
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.venv/
